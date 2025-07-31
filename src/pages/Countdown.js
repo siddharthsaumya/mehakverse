@@ -46,16 +46,17 @@ const calculateElapsedTime = (startDate) => {
   const [talkTime, setTalkTime] = useState(calculateElapsedTime(dateTalk));
   const [loveTime, setLoveTime] = useState(calculateElapsedTime(dateLove));
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setBornTime(calculateElapsedTime(dateBorn));
-      setMetTime(calculateElapsedTime(dateMet));
-      setTalkTime(calculateElapsedTime(dateTalk));
-      setLoveTime(calculateElapsedTime(dateLove));
-    }, 1000);
+useEffect(() => {
+  const timer = setInterval(() => {
+    setBornTime(calculateElapsedTime(dateBorn));
+    setMetTime(calculateElapsedTime(dateMet));
+    setTalkTime(calculateElapsedTime(dateTalk));
+    setLoveTime(calculateElapsedTime(dateLove));
+  }, 1000);
 
-    return () => clearInterval(timer);
-  }, []);
+  return () => clearInterval(timer);
+}, [dateBorn, dateMet, dateTalk, dateLove]);
+
 
   const renderTimer = (title, timeData) => (
     <div className="section">
