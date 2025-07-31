@@ -1,0 +1,122 @@
+.countdown-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+    padding: 40px 20px;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-container h1 {
+    font-size: 2.5rem;
+    color: #c2185b;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #5e4a4a;
+    margin-bottom: 40px;
+    font-style: italic;
+    max-width: 80%;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #880e4f;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.time-box {
+    background: #fff8f9;
+    border: 2px dashed #f48fb1;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.time-box:hover {
+    transform: scale(1.05);
+    background-color: #fff0f5;
+}
+
+.time-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ad1457;
+}
+
+.time-box label {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #6d4c41;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 600px) {
+    .countdown-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        margin-bottom: 0px;
+        box-shadow: 0 0;
+    }
+
+    .time-box {
+        min-width: 80px;
+        padding: 16px;
+    }
+
+    .time-box span {
+        font-size: 1.5rem;
+    }
+
+    .time-box label {
+        font-size: 0.85rem;
+    }
+}

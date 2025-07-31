@@ -1,0 +1,73 @@
+.songs-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fff0f5, #fce4ec);
+    padding: 0px 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.songs-title {
+    font-size: 2.5rem;
+    color: #c2185b;
+    margin-bottom: 10px;
+}
+
+.songs-subtitle {
+    font-style: italic;
+    color: #6d4c4c;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    max-width: 90%;
+}
+
+.player-wrapper {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+}
+
+.lyrics-box {
+    background-color: #fff8fc;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    max-width: 700px;
+    font-size: 1.1rem;
+    color: #4a3c3c;
+    line-height: 1.6;
+}
+
+/* 📱 Mobile */
+@media screen and (max-width: 600px) {
+    .songs-title {
+        font-size: 1.8rem;
+    }
+
+    .songs-subtitle {
+        font-size: 1rem;
+    }
+
+    .lyrics-box {
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    .player-wrapper {
+        padding: 16px;
+        max-width: 90%;
+    }
+}

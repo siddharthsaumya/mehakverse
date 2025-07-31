@@ -1,0 +1,31 @@
+const timelineData = [
+    { id: 1, description: "The day we first met 🌸❤️" },
+    { id: 2, description: "Our first movie date 🎥🍿" },
+    { id: 2.5, description: "Our very first photo together 📸💑" },
+    { id: 3, description: "The first photo I clicked of you 📷☺️" },
+    { id: 4, description: "The first photo you clicked just for me 💖📱" },
+    { id: 5, description: "Our first long-distance phase 🌍💌" },
+    { id: 6, description: "Our first selfie together 🤳💕" },
+    { id: 7, description: "Our first night out 🌙✨" },
+    { id: 8, description: "First time we met after knowing we loved each other 💞🥹" },
+    { id: 10, description: "When talking to each other felt the best ☺️🗣️" },
+    { id: 11, description: "Our first mini trip together ✈️🌄" },
+    { id: 12, description: "You were there when I bought my first vehicle 🚗❤️" },
+    { id: 13, description: "My first ride on my first bike 🏍️🔥" },
+    { id: 14, description: "Our first Holi together – full of color & fun 🌈🎉" },
+    { id: 15, description: "Our normal, happy days 😊🍃" },
+    { id: 16, description: "Your first birthday celebration with me 🎂🎈" },
+    { id: 18, description: "That romantic moment in the rain 🌧️💖" },
+    { id: 19, description: "My most favorite picture of you 😍📸" },
+    { id: 20, description: "Our first real trip – Mt. Abu memories 🏞️🧳" },
+    { id: 21, description: "First Navratri – Garba night magic 💃🕺" },
+    { id: 22, description: "Our second trip – peaceful and soulful 🛕🌼" },
+    { id: 23, description: "You, being a happy Potterhead with toys 🧙‍♀️🧸" },
+    { id: 24, description: "Recreated our bash photo – but this time with love 💃❤️📸" },
+    { id: 25, description: "Our first snow moment (even if it was fake 😅❄️)" },
+    { id: 26, description: "New Year 2025 – a special day out 🎊🌅" },
+    { id: 27, description: "Our Kerala trip – full of peace and love 🌴❤️" },
+    { id: 28, description: "Our last random, sweet little date 🥹🍽️💖" }
+];
+
+export default timelineData;
