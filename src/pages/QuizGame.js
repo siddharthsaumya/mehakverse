@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import quizQuestions from '../data/quizQuestions';
 import '../styles/QuizGame.css';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import loveReasons from '../data/loveReasons';
 import '../styles/LoveReasons.css';
 

@@ -1,21 +1,7 @@
-import React from 'react';
 import timelineData from '../data/timelineData';
 import '../styles/Timeline.css';
 
-function formatDate(dateStr) {
-  const date = new Date(dateStr);
-  return date.toLocaleDateString("en-IN", {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
-  });
-}
-
 function Timeline() {
-  const sortedData = [...timelineData].sort(
-    (a, b) => new Date(a.timestamp) - new Date(b.timestamp)
-  );
-
   return (
    <div className="timeline-container">
   <h1 className="timeline-heading">📷 Our Photo Gallery</h1>

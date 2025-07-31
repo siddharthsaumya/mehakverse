@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import '../styles/Countdown.css';
 
+const dateBorn = new Date("2001-07-30T00:00:00");
+const dateMet = new Date("2023-11-29T10:30:00");
+const dateTalk = new Date("2024-01-13T23:00:00");
+const dateLove = new Date("2024-06-04T21:00:00");
+
 function Countdown() {
-  const dateBorn = new Date("2001-07-30T00:00:00");
-  const dateMet = new Date("2023-11-29T10:30:00");
-  const dateTalk = new Date("2024-01-13T23:00:00");
-  const dateLove = new Date("2024-06-04T21:00:00");
 
 const calculateElapsedTime = (startDate) => {
   const now = new Date();
@@ -55,7 +56,7 @@ useEffect(() => {
   }, 1000);
 
   return () => clearInterval(timer);
-}, [dateBorn, dateMet, dateTalk, dateLove]);
+}, []);
 
 
   const renderTimer = (title, timeData) => (
