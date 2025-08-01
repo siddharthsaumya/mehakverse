@@ -1,13 +1,12 @@
-import  { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Countdown.css';
 
-const dateBorn = new Date("2001-07-30T00:00:00");
-const dateMet = new Date("2023-11-29T10:30:00");
-const dateTalk = new Date("2024-01-13T23:00:00");
-const dateLove = new Date("2024-06-04T21:00:00");
-
+  const dateBorn = new Date("2001-07-30T00:00:00");
+  const dateMet = new Date("2023-11-29T10:30:00");
+  const dateTalk = new Date("2024-01-13T23:00:00");
+  const dateLove = new Date("2024-06-04T21:00:00");
+  
 function Countdown() {
-
 const calculateElapsedTime = (startDate) => {
   const now = new Date();
 
@@ -47,17 +46,16 @@ const calculateElapsedTime = (startDate) => {
   const [talkTime, setTalkTime] = useState(calculateElapsedTime(dateTalk));
   const [loveTime, setLoveTime] = useState(calculateElapsedTime(dateLove));
 
-useEffect(() => {
-  const timer = setInterval(() => {
-    setBornTime(calculateElapsedTime(dateBorn));
-    setMetTime(calculateElapsedTime(dateMet));
-    setTalkTime(calculateElapsedTime(dateTalk));
-    setLoveTime(calculateElapsedTime(dateLove));
-  }, 1000);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setBornTime(calculateElapsedTime(dateBorn));
+      setMetTime(calculateElapsedTime(dateMet));
+      setTalkTime(calculateElapsedTime(dateTalk));
+      setLoveTime(calculateElapsedTime(dateLove));
+    }, 1000);
 
-  return () => clearInterval(timer);
-}, []);
-
+    return () => clearInterval(timer);
+  }, []);
 
   const renderTimer = (title, timeData) => (
     <div className="section">

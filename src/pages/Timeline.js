@@ -1,7 +1,9 @@
+import React from 'react';
 import timelineData from '../data/timelineData';
 import '../styles/Timeline.css';
 
 function Timeline() {
+
   return (
    <div className="timeline-container">
   <h1 className="timeline-heading">📷 Our Photo Gallery</h1>
